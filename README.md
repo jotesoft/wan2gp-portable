@@ -6,13 +6,13 @@ Portable Windows Wan2GP package aimed at NVIDIA RTX 50-series GPUs, especially t
 
 --->clone the repo or download repo as zip file or download from release.
 
- --->Extract the zip file anywhere you one
+---->Extract the zip file anywhere you one
 
-  --->run install_wan2gp.bat
+----->run install_wan2gp.bat
 
-   --->it will now automatically download all the required files to run the latest version on wan2gp so wait until finish the download.
+------>it will now automatically download all the required files to run the latest version on wan2gp so wait until finish the download.
 
-    --->run START_WAN2GP_5060Ti.bat or START_WAN2GP.bat or START_WAN2GP_LAN.bat to start wan2gp webui.
+-------> run START_WAN2GP_5060Ti.bat or START_WAN2GP.bat or START_WAN2GP_LAN.bat to start wan2gp webui.
 
 there many different bonus .bat file to run in different mode us them.
 
