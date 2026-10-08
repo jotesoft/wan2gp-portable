@@ -1,0 +1,1 @@
+v7 - adds portable uv 0.12.12 dependency manager; fixes v6 PowerShell argument collision and isolates Python/Conda environment variables

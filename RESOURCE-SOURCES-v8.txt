@@ -1,0 +1,11 @@
+Wan2GP Portable v8 resource choices
+
+Git: Git for Windows MinGit 2.56.0.2 x64
+Python: python-build-standalone CPython 3.11.14 Windows x64
+uv: Astral uv 0.12.23 Windows x64
+aria2: official aria2 1.37.0 Windows 64-bit build
+FFmpeg: BtbN FFmpeg-Builds n9.0 Windows x64 shared build; ffmpeg.exe + ffprobe.exe + DLLs
+PyTorch: 2.10.0 / torchvision 0.25.0 / torchaudio 2.10.0 from cu130 index
+Triton: triton-windows >=3.6,<3.7
+SageAttention: 2.2.0 Windows post4 cu130 wheel
+Wan2GP: main branch clone via MinGit (depth=1)

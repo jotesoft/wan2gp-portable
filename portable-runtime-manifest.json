@@ -1,0 +1,66 @@
+{
+  "target": "NVIDIA RTX 5060 Ti 16GB / Blackwell",
+  "git": {
+    "distribution": "MinGit",
+    "version": "2.56.0.2",
+    "url": "https://github.com/git-for-windows/git-snapshots/releases/download/2.56.0.2/MinGit-2.56.0.2-64-bit.zip",
+    "sha256": "ab2543fea7eebdc8476b63af2ff8acec10fce72fc9f72a40c9123df94c6ac1ae"
+  },
+  "python": {
+    "distribution": "python-build-standalone",
+    "version": "3.11.14",
+    "release": "20251031",
+    "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20251031/cpython-3.11.14%2B20251031-x86_64-pc-windows-msvc-install_only.tar.gz",
+    "integrity": "SHA256 queried from the pinned GitHub release asset metadata before extraction"
+  },
+  "uv": {
+    "version": "0.12.23",
+    "platform": "x86_64-pc-windows-msvc",
+    "urls": [
+      "https://releases.astral.sh/github/uv/releases/download/0.12.23/uv-x86_64-pc-windows-msvc.zip",
+      "https://github.com/astral-sh/uv/releases/download/0.12.23/uv-x86_64-pc-windows-msvc.zip"
+    ],
+    "sha256": "75d05de6762778c31ee183398de7dd15093fad0ed90b1f236d8205ea5ec00c90",
+    "install_mode": "portable runtime/uv/uv.exe"
+  },
+  "aria2": {
+    "version": "1.37.0",
+    "platform": "win-64bit",
+    "url": "https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0-win-64bit-build1.zip",
+    "sha256": "67d015301eef0b612191212d564c5bb0a14b5b9c4796b76454276a4d28d9b288",
+    "purpose": "segmented and resumable downloads"
+  },
+  "ffmpeg": {
+    "distribution": "BtbN FFmpeg-Builds",
+    "family": "n9.0",
+    "asset": "ffmpeg-n9.0-latest-win64-gpl-shared-9.0.zip",
+    "source": "https://github.com/BtbN/FFmpeg-Builds/releases",
+    "download_mode": "aria2 segmented and resumable",
+    "requires": [
+      "ffmpeg.exe",
+      "ffprobe.exe",
+      "shared DLLs"
+    ]
+  },
+  "pytorch": {
+    "torch": "2.10.0",
+    "torchvision": "0.25.0",
+    "torchaudio": "2.10.0",
+    "index": "https://download.pytorch.org/whl/cu130"
+  },
+  "triton": ">=3.6,<3.7",
+  "sageattention": "2.2.0 post4 cu130 torch>=2.9 ABI3",
+  "bundle_version": "8.0",
+  "dependency_manager": "uv + aria2",
+  "notes": [
+    "uv is isolated in runtime/uv and does not modify PATH permanently",
+    "aria2 is isolated in runtime/aria2 and used by bootstrap for resumable segmented downloads",
+    "large downloads use up to 8 connections with curl fallback",
+    "Git, Python, uv, and aria2 archives are SHA-256 verified when pinned",
+    "BtbN FFmpeg release metadata and checksums are queried from GitHub when available",
+    "uv installs into the explicitly selected portable Python interpreter",
+    "UV_NO_CONFIG prevents external uv configuration from changing the environment",
+    "no Python downloads are allowed through uv",
+    "no permanent PATH modifications are made"
+  ]
+}
