@@ -1,6 +1,17 @@
 # Wan2GP-RTX50xx-Portable installer
 
-Portable Windows Wan2GP package aimed at NVIDIA RTX 50-series GPUs, especially the RTX 5060 Ti 16GB and other RTX 50-series / Blackwell GPU. But it will work with RTX 20xx , 30xx, 40xx gpus
+Portable Windows Wan2GP package aimed at NVIDIA RTX 50-series GPUs, especially the RTX 5060 Ti 16GB and other RTX 50-series / Blackwell GPU. But it will work with RTX 20xx , 30xx, 40xx GPUs
+
+## How to install
+>clone the repo or download repo as zip file or download from release.
+ >Extract the zip file anywhere you one
+  > run install_wan2gp.bat
+   > it will now automatically download all the required files to run the latest version on wan2gp so wait until finish the download.
+    >  run START_WAN2GP_5060Ti.bat or START_WAN2GP.bat or START_WAN2GP_LAN.bat to start wan2gp webui 
+there any different bonus bat file to run in different mode. 
+
+Important note: 
+if you see any error (e.g [2026-10-08 22:44:51] [ERROR] Python verification process failed.) at the end don't worry you installation is complete. now just run START_WAN2GP.bat it will work.
 
 ## Features
 
