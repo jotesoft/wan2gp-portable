@@ -1,6 +1,6 @@
 # Wan2GP-RTX50xx-Portable installer
 
-Portable Windows Wan2GP package aimed at NVIDIA RTX 50-series GPUs, especially the RTX 5060 Ti 16GB.
+Portable Windows Wan2GP package aimed at NVIDIA RTX 50-series GPUs, especially the RTX 5060 Ti 16GB and other RTX 50-series / Blackwell GPU. But it will work with RTX 20xx , 30xx, 40xx gpus
 
 ## Features
 
@@ -23,7 +23,7 @@ Portable Windows Wan2GP package aimed at NVIDIA RTX 50-series GPUs, especially t
 
 Primary target:
 
-* RTX 5060 Ti 16GB
+* RTX 5060 Ti 16GB ( Build/Test device)
 
 Also intended for other RTX 50-series / Blackwell GPUs:
 
